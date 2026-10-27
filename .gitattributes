@@ -1,0 +1,11 @@
+# Normalize text to LF in the repository.
+* text=auto eol=lf
+
+# Binary artifacts must never be converted.
+*.elemod binary
+*.syx binary
+*.png binary
+*.gif binary
+*.bin binary
+*.elf binary
+*.o binary

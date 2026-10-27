@@ -1,0 +1,44 @@
+# Release repository: elemods, media and the README only.
+# All source/build trees are archived outside this repository.
+/packs/
+/upstream/
+/tools/
+/AGENTS.md
+/HANDOFF.md
+
+# Build outputs
+build/
+dist/
+out/
+testout/
+*.work/
+*.syx
+*.map
+*.elf
+*.o
+
+# The packaged release elemods and media are tracked.
+!elemods/*.elemod
+!media/*.png
+!media/*.gif
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# Logs / temporary files
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Editors
+.vs/
+.idea/
+*.swp
+
+# OS junk
+Thumbs.db
+.DS_Store
