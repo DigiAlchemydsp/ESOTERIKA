@@ -7,8 +7,8 @@ The Digitakt 1.54 port is parked and is not part of this package.
 | file | role | requires |
 |---|---|---|
 | `esoterika-1.0-os1.44.elemod` | **host/container** | `core-dn1-4.0-os1.44.elemod` |
-| `ruin-1.0-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
-| `xtal-1.0-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
+| `ruin-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
+| `xtal-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
 | `void-1.0-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
 
 ## Install
@@ -22,8 +22,7 @@ The Digitakt 1.54 port is parked and is not part of this package.
    sites and register their page and audio chain with ESOTERIKA. With all three
    installed the audio path is RUIN → XTAL → VOID.
 4. Tick the core, ESOTERIKA and the chosen guests, set the OS version tag to the
-   4-character `1.0 ` (trailing space; the elemod version itself is `1.0`), and
-   build.
+   4-character `1.1 ` (trailing space), and build.
 5. Flash the resulting firmware with Transfer.
 
 A guest without ESOTERIKA does not link. The Digitakt mk1 elemods are not part
@@ -40,7 +39,7 @@ Shared behaviour:
 - The background lattice fills the strip beside the depth bar with one extra
   dot column.
 
-## RUIN 1.0 (guest)
+## RUIN 1.1 (guest)
 
 - FOLD + CRUSH only; no RING, no delay line.
 - Six mode pairings: **TRASH + CRUNCH**, **CLEAN + REDUX**, **DIST + CRUNCH**,
@@ -48,12 +47,14 @@ Shared behaviour:
   `REDUX`, `DIST`, `MUD`, `CLEAN`, `SRR`).
 - `A` = macro on/off, `D` = mode, `B/C/E/F/G/H` = amount.
 - OFF: `RUIN` scrolls right-to-left; the depth bar stays visible.
-- ON at 0: empty dotgrid base.
-- ON > 0: mode-specific concentric-circle blast; the bar is amount.
+- ON: a round dotgrid bomb with a five-cell fuse and a flashing spark.
+- From 35% depth, pulsing `( )` arcs appear outside the bomb; from 70% depth
+  the bomb is replaced by a dense ring/ray blast.
 - Changing mode flashes a short mode title across the top dot rows.
-- Each mode has independent fold/crush curves and max depths (no gain stage).
+- Each mode has independent fold/crush curves, max depths and a macro-ramped
+  output trim.
 
-## XTAL 1.0 (guest)
+## XTAL 1.1 (guest)
 
 - Autopan/stereo PAN + WRMZ delay, no other FX.
 - Six modes with different WRMZ time/feedback/tone/mod/rate and stereo PAN
@@ -62,7 +63,8 @@ Shared behaviour:
 - `A` = macro on/off, `D` = mode, `B/C/E/F/G/H` = depth.
 - OFF: `XTAL` scrolls right-to-left; the depth bar stays visible.
 - ON: three diamond outlines. At depth 0 they overlap into one; as depth rises
-  the outer diamonds separate L/R.
+  the outer diamonds separate L/R and move up/down per mode. The centre diamond
+  stays fixed.
 - Changing mode flashes a short mode title across the top dot rows.
 
 ## VOID 1.0 (guest)

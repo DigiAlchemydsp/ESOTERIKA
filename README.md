@@ -38,8 +38,8 @@
 | glyph | vessel | whisper |
 |:--:|---|---|
 | ┃◈┃ | `esoterika-1.0-os1.44.elemod` | the vessel and the page-host |
-| ┃△┃ | `ruin-1.0-os1.44.elemod` | fold · crush |
-| ┃◇┃ | `xtal-1.0-os1.44.elemod` | pan · wrmz |
+| ┃△┃ | `ruin-1.1-os1.44.elemod` | fold · crush |
+| ┃◇┃ | `xtal-1.1-os1.44.elemod` | pan · wrmz |
 | ┃⟁┃ | `void-1.0-os1.44.elemod` | wob · pan |
 
 ```
@@ -54,7 +54,7 @@
 
 1. Bear the core into **elekloader**.
 2. Set **ESOTERIKA** as the vessel. Add any of the three names.
-3. Mark the seal `1.0 ` — four glyphs; the last is silence.
+3. Mark the seal `1.1 ` — four glyphs; the last is silence.
 4. Return the fire with **Transfer**.
 
 > A name alone is empty. The vessel is required.
