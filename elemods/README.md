@@ -1,7 +1,7 @@
 # ESOTERIKA elemods
 
-Four Elemods for the **Elektron Digitone mk1 / Digitone Keys (OS 1.44)**: one
-**container/host** plus three guest packs. **No firmware / `.syx` is included.**
+Five Elemods for the **Elektron Digitone mk1 / Digitone Keys (OS 1.44)**: one
+**container/host** and four guest packs. **No firmware / `.syx` is included.**
 The Digitakt 1.54 port is parked and is not part of this package.
 
 | file | role | requires |
@@ -10,6 +10,7 @@ The Digitakt 1.54 port is parked and is not part of this package.
 | `ruin-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
 | `xtal-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
 | `void-1.0-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
+| `crepus-1.0-os1.44.elemod` | guest (new in 1.2) | core + `esoterika-1.0-os1.44` |
 
 ## Install
 
@@ -18,11 +19,11 @@ The Digitakt 1.54 port is parked and is not part of this package.
    the master-view and audio sites, the boot splash, the page cycle, and the
    single output ceiling, and has no page of its own. Do **not** also install the
    standalone `esoterika-splash` mod; its intro sites overlap the host.
-3. Add **any combination** of guest packs: RUIN, XTAL and VOID. Guests have 0
-   sites and register their page and audio chain with ESOTERIKA. With all three
-   installed the audio path is RUIN → XTAL → VOID.
+3. Add **any combination** of guest packs: RUIN, XTAL, VOID and CREPUS. Guests
+   have 0 sites and register their page and audio chain with ESOTERIKA. With all
+   four installed the audio path is RUIN → CREPUS → XTAL → VOID.
 4. Tick the core, ESOTERIKA and the chosen guests, set the OS version tag to the
-   4-character `1.1 ` (trailing space), and build.
+   4-character `1.2 ` (trailing space), and build.
 5. Flash the resulting firmware with Transfer.
 
 A guest without ESOTERIKA does not link. The Digitakt mk1 elemods are not part
@@ -81,6 +82,22 @@ Shared behaviour:
   single bold centre block is shown. SPIN's visual travel is capped to one cell;
   its audio pan depth is unchanged.
 - `void_wave` is namespaced, so VOID can be installed alongside XTAL.
+
+## CREPUS 1.0 (new in 1.2)
+
+- One-knob master tilt / DJ filter. Amount is centred at 64: below 64 tilts
+  dark, above 64 bright; `A` = on/off, `D` = mode, `B/C/E/F/G/H` = amount.
+- Six modes: **TILT**, **DAWN**, **NOON**, **DUSK**, **ECLIPSE**, **UMBRA**.
+  TILT is the pure two-shelf EQ motion; the others add a resonant LP/HP sweep,
+  with ECLIPSE as a moving band and UMBRA as the aggressive end.
+- OFF: `CREPUS` scrolls right-to-left. ON: an encoder-driven full-screen
+  sun/moon dial; the moon rises as the sun sets, with six pulsating stars
+  between them.
+- Store: `ESO7` v3 at `pattern+0x1800` (second half of VOID's CH 15 block).
+- Render-out order 59; page priority 40.
+- **New in 1.2.** Hardware validation is still in progress; report any issues.
+
+![CREPUS dial](../media/crepus.gif)
 
 ## Hashes
 

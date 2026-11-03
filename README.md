@@ -17,15 +17,15 @@
 ┌─────────────────────────────────────────────────────────────┐
 │  AS ABOVE, SO BELOW.                                        │
 │  THE MACRO CONTAINS THE WHOLE.                              │
-│  THREE CHAMBERS TURN BENEATH ONE SKY.                       │
+│  FOUR CHAMBERS TURN BENEATH ONE SKY.                        │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-| ┃ R U I N ┃ | ┃ X T A L ┃ | ┃ V O I D ┃ | ┃ G E N E S I S ┃ |
-|:---:|:---:|:---:|:---:|
-| ![RUIN](media/ruin.png) | ![XTAL](media/xtal.png) | ![VOID](media/void.png) | ![GENESIS](media/boot.gif) |
-| ┃ the iron choir ┃ | ┃ the twin moons ┃ | ┃ the wandering star ┃ | ┃ before the lattice ┃ |
-| what is whole is broken; what is broken is made holy | the field opens left and right; the echo remembers | it moves without moving; the arrow is its shadow | the crystal dreamed, and the dream remained |
+| ┃ R U I N ┃ | ┃ X T A L ┃ | ┃ V O I D ┃ | ┃ C R E P U S ┃ | ┃ G E N E S I S ┃ |
+|:---:|:---:|:---:|:---:|:---:|
+| ![RUIN](media/ruin.png) | ![XTAL](media/xtal.png) | ![VOID](media/void.png) | ![CREPUS](media/crepus.png) | ![GENESIS](media/boot.gif) |
+| ┃ the iron choir ┃ | ┃ the twin moons ┃ | ┃ the wandering star ┃ | ┃ the sun and moon ┃ | ┃ before the lattice ┃ |
+| what is whole is broken; what is broken is made holy | the field opens left and right; the echo remembers | it moves without moving; the arrow is its shadow | the sun sets as the moon rises; one dial turns both | the crystal dreamed, and the dream remained |
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -41,6 +41,7 @@
 | ┃△┃ | `ruin-1.1-os1.44.elemod` | fold · crush |
 | ┃◇┃ | `xtal-1.1-os1.44.elemod` | pan · wrmz |
 | ┃⟁┃ | `void-1.0-os1.44.elemod` | wob · pan |
+| ┃☾┃ | `crepus-1.0-os1.44.elemod` | tilt · dj |
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -53,8 +54,8 @@
 ### ┃ the rite ┃
 
 1. Bear the core into **elekloader**.
-2. Set **ESOTERIKA** as the vessel. Add any of the three names.
-3. Mark the seal `1.1 ` — four glyphs; the last is silence.
+2. Set **ESOTERIKA** as the vessel. Add any of the four names.
+3. Mark the seal `1.2 ` — four glyphs; the last is silence.
 4. Return the fire with **Transfer**.
 
 > A name alone is empty. The vessel is required.
