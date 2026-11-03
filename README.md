@@ -40,7 +40,7 @@
 | ┃◈┃ | `esoterika-1.0-os1.44.elemod` | the vessel and the page-host |
 | ┃△┃ | `ruin-1.1-os1.44.elemod` | fold · crush |
 | ┃◇┃ | `xtal-1.1-os1.44.elemod` | pan · wrmz |
-| ┃⟁┃ | `void-1.0-os1.44.elemod` | wob · pan |
+| ┃⟁┃ | `void-1.1-os1.44.elemod` | wob · pan |
 | ┃☾┃ | `crepus-1.0-os1.44.elemod` | tilt · dj |
 
 ```

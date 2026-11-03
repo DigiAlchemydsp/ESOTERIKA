@@ -9,7 +9,7 @@ The Digitakt 1.54 port is parked and is not part of this package.
 | `esoterika-1.0-os1.44.elemod` | **host/container** | `core-dn1-4.0-os1.44.elemod` |
 | `ruin-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
 | `xtal-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
-| `void-1.0-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
+| `void-1.1-os1.44.elemod` | guest | core + `esoterika-1.0-os1.44` |
 | `crepus-1.0-os1.44.elemod` | guest (new in 1.2) | core + `esoterika-1.0-os1.44` |
 
 ## Install
@@ -39,6 +39,8 @@ Shared behaviour:
   captured base layer is saved too.
 - The background lattice fills the strip beside the depth bar with one extra
   dot column.
+- CREPUS stores in `ESO7` at `pattern+0x1800` (second half of VOID's CH 15
+  block). Kit memory is never written.
 
 ## RUIN 1.1 (guest)
 
@@ -68,7 +70,7 @@ Shared behaviour:
   stays fixed.
 - Changing mode flashes a short mode title across the top dot rows.
 
-## VOID 1.0 (guest)
+## VOID 1.1 (guest)
 
 - WOB pitch wobble + PAN autopan, one namespaced `void_wave` engine that runs
   both groups in the same block, so pitch and pan can move together.
@@ -82,6 +84,8 @@ Shared behaviour:
   single bold centre block is shown. SPIN's visual travel is capped to one cell;
   its audio pan depth is unchanged.
 - `void_wave` is namespaced, so VOID can be installed alongside XTAL.
+- VOID 1.1: wet ramps reach true zero (no stuck flanger after OFF) and the
+  amount/depth stops at 126 to avoid the 127 edge.
 
 ## CREPUS 1.0 (new in 1.2)
 
